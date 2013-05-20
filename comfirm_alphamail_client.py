@@ -9,14 +9,23 @@ class EmailContact:
 		self.email = email
 		self.id = id
 	
-	def set_name(self, value):
-		self.name = value
+	def set_name(self, name):
+		self.name = name
+	
+	def get_name(self):
+		return self.name
 
-	def set_email(self, value):
-		self.email = value
+	def set_email(self, email):
+		self.email = email
 
-	def set_id(self, value):
-		self.id = value
+	def get_email(self):
+		return self.email
+
+	def set_id(self, id):
+		self.id = id
+		
+	def get_id(self):
+		return self.id
 
 # Message payload class
 class EmailMessagePayload:
@@ -28,21 +37,45 @@ class EmailMessagePayload:
 
 	def set_project_id(self, id):
 		self.project_id = id
-		
+	
+	def get_project_id(self):
+		return self.project_id
+	
 	def set_sender(self, contact):
 		self.sender = contact
+		
+	def get_sender(self):
+		return self.sender
 		
 	def set_receiver(self, contact):
 		self.receiver = contact
 		
+	def get_receiver(self):
+		return self.receiver
+		
 	def set_body_object(self, object):
 		self.payload = object
+		
+	def get_body_object(self):
+		return self.payload
 
-# Alpha-mail email service
+# AlphaMail email service
 class AlphaMailEmailService:
 	def __init__(self, service_url, api_token):
 		self.service_url = service_url
 		self.api_token = api_token
+
+	def set_service_url(self, url):
+		self.service_url = url
+	
+	def get_service_url(self):
+		return self.service_url
+
+	def set_api_token(self, token):
+		self.api_token = token
+	
+	def get_api_token(self):
+		return self.api_token
 
 	def queue(self, payload):
 		# Basic Authentication

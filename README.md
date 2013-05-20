@@ -5,7 +5,7 @@ Start sending transactional e-mail today without the hassle of SMTP and large bl
 
 AlphaMail supports templating (Comlang), DKIM-signatures and reliable delivery. Beside that, we got awesome statistics.
 
-http://www.comfirm.se/
+http://www.amail.io/
 
 
 How to run the example:
