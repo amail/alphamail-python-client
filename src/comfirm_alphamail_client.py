@@ -103,6 +103,6 @@ class AlphaMailEmailService:
 		)
 
 		# Queue the message
-		response = urllib2.urlopen(self.service_url+'/email/queue', data).read()
+		response = urllib2.urlopen(self.service_url+'email/queue', data).read()
 		print 'Message was successfully queued!'
 		
